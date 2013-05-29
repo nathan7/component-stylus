@@ -1,0 +1,28 @@
+{
+  "name": "component-stylus",
+  "version": "1.0.0",
+  "description": "Compile your Stylus to CSS automatically",
+  "main": "index.js",
+  "peerDependencies": {
+    "stylus": "0.x"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/component-stylus.git"
+  },
+  "keywords": [
+    "stylus",
+    "component"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathan7/component-stylus/issues"
+  },
+  "readmeFilename": "Readme.md",
+  "dependencies": {
+    "async": "~0.2.9",
+    "literally": "~1.0.0"
+  }
+}
