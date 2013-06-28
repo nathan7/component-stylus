@@ -4,7 +4,7 @@ var fs = require('fs')
   , async = require('async')
   , Stylus = require('stylus')
   , Nib = function() {}
-try { nib = require('nib') } catch (e) {}
+try { Nib = require('nib') } catch (e) {}
 
 module.exports = function(builder) { builder.hook('before styles', Build.bind(builder)) }
 
