@@ -1,3 +1,4 @@
+'use strict';
 var fs = require('fs')
   , literally = require('literally')
   , async = require('async')
@@ -5,9 +6,9 @@ var fs = require('fs')
   , Nib = function() {}
 try { nib = require('nib') } catch (e) {}
 
-module.exports = function(builder) { builder.hook('before styles', build.bind(builder)) }
+module.exports = function(builder) { builder.hook('before styles', Build.bind(builder)) }
 
-function build(pkg, next) {
+function Build(pkg, next) {
   var builder = this
   async.each((pkg.config.styles || []).filter(isStylus), function(filename, cb) {
     async.waterfall(

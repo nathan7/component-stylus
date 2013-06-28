@@ -1,0 +1,9 @@
+{
+  "asi": true,
+  "laxcomma": true,
+  "laxbreak": true,
+  "globalstrict": true,
+  "strict": true,
+  "newcap": false,
+  "node": true
+}
